@@ -1,0 +1,143 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-height: 1080px;
+  max-width: 1920px;
+  overflow: hidden;
+}
+
+.block__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1920px;
+  height: 1080px;
+  transform: translate(-50%, -50%);
+}
+
+.block__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 15, 32, 0.4);
+}
+
+.block__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 11px 15px;
+  min-width: 41px;
+  height: 41px;
+  border-radius: 48px;
+  border: none;
+  transition: width 0.2s ease-in;
+  color: #fff;
+  font-family: Arial, serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.block__btn_green {
+  background: rgba(106, 191, 75, 0.7);
+
+}
+
+.block__btn_blue {
+  background: rgba(56, 119, 238, 0.7);
+}
+
+.block__btn_open {
+  opacity: 1;
+}
+
+.block__btn_open.block__btn_green {
+  background: #6ABF4B;
+}
+
+.block__btn_open.block__btn_blue {
+  background: #3877EE;
+}
+
+.block__btn-icon {
+  opacity: 1;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url("./img/plus-icon.svg") center no-repeat;
+}
+
+.block__btn_open .block__btn-icon {
+  background: url("./img/minus-icon.svg") center no-repeat;
+}
+
+.block__btn-text {
+  display: none;
+  margin-left: 15px;
+}
+
+.block__btn_open .block__btn-text {
+  display: inline;
+}
+
+/* позиционирование */
+
+.block__btn:nth-child(1) {
+  top: calc(100% / 2 - 260px);
+  left: calc(100% / 2 - 375px);
+}
+
+.block__btn:nth-child(2) {
+  top: calc(100% / 2 - 315px);
+  left: calc(100% / 2 + 415px);
+}
+
+.block__btn:nth-child(3) {
+  top: calc(100% / 2 - 65px);
+  left: calc(100% / 2 + 455px);;
+}
+
+.block__btn:nth-child(4) {
+  top: calc(100% / 2 + 90px);
+  left: calc(100% / 2 + 120px);
+}
+
+.block__btn:nth-child(5) {
+  top: calc(100% / 2 + 175px);
+  left: calc(100% / 2 - 515px);
+}
+
+.block__btn:nth-child(6) {
+  top: calc(100% / 2 + 175px);
+  right: calc(100% / 2 - 670px);
+}
+
+.block__btn:nth-child(7) {
+  top: calc(100% / 2 - 135px);
+  left: calc(100% / 2 + 190px);
+}
+
+.block__btn:nth-child(8) {
+  top: calc(100% / 2 + 130px);
+  left: calc(100% / 2 + 350px);
+}
+
+.block__btn:nth-child(9) {
+  top: calc(100% / 2 + 250px);
+  left: calc(100% / 2 + 150px);
+}
+
+.block__btn:nth-child(10) {
+  top: calc(100% / 2 - 60px);
+  left: calc(100% / 2 - 275px);
+}
+
